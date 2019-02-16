@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot rpa="false" generated="20190216 17:24:07.074" generator="Robot 3.1.1 (Python 2.7.12 on linux2)">
+<suite source="/home/nipa/Project/Robot/testcase/facebook/login.robot" id="s1" name="Login">
+<test id="s1-t1" name="TC001 Success Login facebook with valid username and password">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>https://www.facebook.com/</arg>
+<arg>chrome</arg>
+</arguments>
+<msg timestamp="20190216 17:24:07.172" level="INFO">Opening browser 'chrome' to base url 'https://www.facebook.com/'.</msg>
+<status status="PASS" endtime="20190216 17:24:13.763" starttime="20190216 17:24:07.171"></status>
+</kw>
+<kw name="Login facebook">
+<arguments>
+<arg>${email1}</arg>
+<arg>${password1}</arg>
+</arguments>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=email</arg>
+<arg>${email}</arg>
+</arguments>
+<msg timestamp="20190216 17:24:13.766" level="INFO">Typing text 'st.sanyanee' into text field 'id=email'.</msg>
+<status status="PASS" endtime="20190216 17:24:14.597" starttime="20190216 17:24:13.765"></status>
+</kw>
+<kw name="Input Password" library="SeleniumLibrary">
+<doc>Types the given password into text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=pass</arg>
+<arg>${password}</arg>
+</arguments>
+<msg timestamp="20190216 17:24:14.597" level="INFO">Typing password into text field 'id=pass'.</msg>
+<status status="PASS" endtime="20190216 17:24:14.699" starttime="20190216 17:24:14.597"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>id=loginbutton</arg>
+</arguments>
+<msg timestamp="20190216 17:24:14.700" level="INFO">Clicking element 'id=loginbutton'.</msg>
+<status status="PASS" endtime="20190216 17:24:16.691" starttime="20190216 17:24:14.699"></status>
+</kw>
+<status status="PASS" endtime="20190216 17:24:16.691" starttime="20190216 17:24:13.764"></status>
+</kw>
+<kw type="teardown" name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20190216 17:24:16.755" starttime="20190216 17:24:16.692"></status>
+</kw>
+<doc>To verify user can login facebook success fully</doc>
+<status status="PASS" endtime="20190216 17:24:16.755" critical="yes" starttime="20190216 17:24:07.170"></status>
+</test>
+<test id="s1-t2" name="TC001 Success Login facebook with valid username and password">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>https://www.facebook.com/</arg>
+<arg>chrome</arg>
+</arguments>
+<msg timestamp="20190216 17:24:16.758" level="INFO">Opening browser 'chrome' to base url 'https://www.facebook.com/'.</msg>
+<status status="PASS" endtime="20190216 17:24:24.321" starttime="20190216 17:24:16.757"></status>
+</kw>
+<kw name="Login facebook">
+<arguments>
+<arg>${email2}</arg>
+<arg>${password2}</arg>
+</arguments>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=email</arg>
+<arg>${email}</arg>
+</arguments>
+<msg timestamp="20190216 17:24:24.328" level="INFO">Typing text 'qwwerty' into text field 'id=email'.</msg>
+<status status="PASS" endtime="20190216 17:24:24.463" starttime="20190216 17:24:24.326"></status>
+</kw>
+<kw name="Input Password" library="SeleniumLibrary">
+<doc>Types the given password into text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=pass</arg>
+<arg>${password}</arg>
+</arguments>
+<msg timestamp="20190216 17:24:24.463" level="INFO">Typing password into text field 'id=pass'.</msg>
+<status status="PASS" endtime="20190216 17:24:24.543" starttime="20190216 17:24:24.463"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>id=loginbutton</arg>
+</arguments>
+<msg timestamp="20190216 17:24:24.544" level="INFO">Clicking element 'id=loginbutton'.</msg>
+<status status="PASS" endtime="20190216 17:24:28.104" starttime="20190216 17:24:24.544"></status>
+</kw>
+<status status="PASS" endtime="20190216 17:24:28.104" starttime="20190216 17:24:24.324"></status>
+</kw>
+<kw type="teardown" name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20190216 17:24:28.166" starttime="20190216 17:24:28.105"></status>
+</kw>
+<doc>To verify user can login facebook success fully</doc>
+<status status="PASS" endtime="20190216 17:24:28.166" critical="yes" starttime="20190216 17:24:16.756"></status>
+</test>
+<status status="PASS" endtime="20190216 17:24:28.167" starttime="20190216 17:24:07.076"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="0" pass="2">Critical Tests</stat>
+<stat fail="0" pass="2">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="0" id="s1" name="Login" pass="2">Login</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20190216 17:24:16.756" level="WARN">Multiple test cases with name 'TC001 Success Login facebook with valid username and password' executed in test suite 'Login'.</msg>
+</errors>
+</robot>
